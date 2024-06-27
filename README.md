@@ -8,10 +8,10 @@ Ray Casting: Rays are generated from a camera and tested for intersections with 
 Intersection Testing: Rays are checked for intersections with circles, determining the closest points of contact.
 Color and Lighting: Intersected points are visualized, with rays changing color upon hitting an object and dimming over time.
 #### Key Components
-Camera: Generates rays within a specified field of view (FOV).
-Rays: Cast from the camera to detect intersections with objects.
-Objects: Simple geometric shapes (circles) that rays can intersect with.
-Intersection Result: Stores details about the intersection, such as the hit location, distance, and surface normal.
+* Camera: Generates rays within a specified field of view (FOV).
+* Rays: Cast from the camera to detect intersections with objects.
+* Objects: Simple geometric shapes (circles) that rays can intersect with.
+* Intersection Result: Stores details about the intersection, such as the hit location, distance, and surface normal.
 
 #### Learning Goals
 This project aims to help me:
