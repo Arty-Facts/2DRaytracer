@@ -9,13 +9,15 @@ class IntersectResult {
 public:
     bool hit;
     T distance;
+    Vec2<T> origin;
     Vec2<T> hitLocation;
     Vec2<T> normal;
     sf::Color color;
-    float emission;
+    float emitter;
+    float intensity;
 
     IntersectResult()
-        : hit(false), distance(0), color(sf::Color::White), emission(0) {}
+        : hit(false), distance(std::numeric_limits<T>::max()), color(sf::Color::White), emitter(false), intensity(1) {}
 };
 
 #endif // INTERSECTRESULT_H
