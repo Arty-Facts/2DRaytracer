@@ -175,10 +175,6 @@ int main() {
 
         Ray<float>& ray = camera.generateRay();
         trace(ray, scene, lines, mainWindow);
-        std::vector<float> hitDistances;
-        for (const auto& ray : camera.rays) {
-            hitDistances.push_back(ray.radiance);
-        }
 
         lines.update(deltaTime);
         lines.draw(mainWindow);
